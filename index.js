@@ -9,7 +9,7 @@ getConnection();
 
 const app = express();
 app.disable("x-powered-by");
-app.use(cors({ origin: ["http://localhost:1234", "https://jordy1756.github.io"], credentials: true }));
+app.use(cors({ origin: ["http://localhost:4321", "https://turrika.vercel.app"], credentials: true }));
 
 app.use(json());
 app.use("/api", createAPIRouter());
